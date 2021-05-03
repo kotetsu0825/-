@@ -1,0 +1,451 @@
+/* テキスト/強調テキスト */
+.text {
+  font-size: 14px;
+}
+
+.emphasis {
+  font-size: 32px;
+  font-weight: bold;
+  color: red;
+}
+
+/* マーカーテキスト */
+.marker {
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(transparent 75%, yellow 75%);
+}
+
+/* リンク */
+.link {
+  font-style: 14px;
+  color: #0051e0;
+}
+
+/* 見出し/下線見出し */
+.title-inner {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 3px dashed #000;
+  padding-bottom: 1px;
+}
+
+/* 見出し/左線見出し */
+.title_2 {
+  padding: 5px;
+  border-left: 3px solid #000;
+  background: #f4f4f4;
+  width: 120px;
+}
+
+/* 見出し/両サイド線見出し */
+.title_3 {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+.title:before, .title:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+}
+
+.title:before {
+  left:0;
+}
+
+.title:after {
+  right:0;
+}
+
+
+/* ヘッダー/ナビ付きヘッダー */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #000;
+  color: #fff;
+}
+
+.header-ttl {
+  font-style: 24px;
+  width: 80px;
+}
+
+.header-nav-list {
+  display: flex;
+  font-weight: bold;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ヘッダー/２段ヘッダー */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header_2 {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.header-ttl_2 {
+  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-nav-list_2 {
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.header-nav-item_2:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* フッター/縦並び */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-ttl {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-nav-list {
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+/* フッター/横並び */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer_2 {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer-ttl_2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-nav-list_2 {
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-nav-item_2:not(:last-child) {
+  margin-right: 30px;
+}
+
+.copyright_2 {
+  font-size: 12px;
+}
+
+/* カード/画像なしカード */
+.card {
+  width: 300px;
+  padding: 20px 12px 10px;
+  border: 1px solid #e9eaea;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.text {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #d7b071;
+}
+
+/* カード/複数画像ありカード */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+.card {
+  width: 20%;
+  cursor: pointer;
+  border: 1px solid #e9eaea;
+  border-radius: 3px;
+}
+
+.text-box {
+  padding: 15px;
+}
+
+.content_img {
+  padding: 10px 0;
+  text-align: center;
+  background: #e1f3ff;
+}
+
+.date {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/* リスト/縦並びリスト */
+.list {
+  width: 200px;
+  padding: 10px 30px;
+  background: #fbfbf6;
+  border: solid 3px #000;
+  border-radius: 10px;
+}
+
+.item {
+  padding: 10px 0;
+  line-height: 1.5em;
+}
+
+/* リスト/横並びリスト */
+.list-wrapper {
+  font-weight: bold;
+  color: #999;
+}
+
+.list_2 {
+  display: flex;
+  align-items: baseline;
+  padding: 10px 6px;
+  list-style: none;
+}
+
+.item_2:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.item_2:first-of-type {
+  line-height: 1.4;
+  color: #555;
+  border-bottom: 1.5px solid #d7b071;
+}
+
+/* テーブル/料金プラン */
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+}
+
+table tr:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  text-align: center;
+  padding: 20px 0;
+  border-right: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+}
+
+table th:nth-child(1) {
+  background-color: #ddd;
+}
+
+table th:nth-child(2) {
+  background-color: #ff0033;
+  color: #fff;
+}
+
+table th:nth-child(3) {
+  background-color: #d7b071;
+  color: #fff;
+}
+
+table tr:nth-child(2) td {
+  font-size: 28px;
+  padding-top: 20px;
+}
+
+table tr:nth-child(3) td {
+  padding-bottom: 20px;
+}
+
+table td {
+  text-align: center;
+  padding: 10px 0;
+  border-right: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+}
+
+table td a {
+  color: #005fff;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* 企業概要 */
+table {
+  width: 60%;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+table th {
+  font-weight: bold;
+  background-color: #dedede;
+}
+
+/* フォーム */
+.form {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.form-item {
+  border-top: 1px solid #ddd;
+  padding: 24px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+
+.form-item-label {
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-item-label-required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding: 8px 0;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #5bc8ac;
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-item-input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding: 0 10px;
+  height: 48px;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.font-item-textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding: 0 10px;
+  height: 200px;
+  width: 100px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.font-btn {
+  border-radius: 6px;
+  margin: 32px auto 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
